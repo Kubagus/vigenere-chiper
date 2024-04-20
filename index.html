@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vigenere Cipher</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="card mt-4 border border-primary">
+				<div
+					class="card-header bg-primary fs-4 fw-semibold text-white text-center">
+					<p class="mt-2 fs-1 fw-bold">Vigenere Chiper</p>
+				</div>
+				<div class="card-body bg-light text-center">
+					<div class="row">
+						<div class="col">
+							<div class="mt-2">
+								<label for="key">Key:</label>
+								<input
+									type="text"
+									class="form-control"
+									id="key"
+									placeholder="Masukkan kunci..." required />
+							</div>
+							<div class="mt-4">
+								<label for="plaintext">Plaintext:</label>
+								<textarea
+									id="plaintext"
+									class="form-control"
+									rows="3"
+									placeholder="Masukkan plaintext..."></textarea>
+								<button class="btn btn-primary btn-sm mt-2" onclick="encrypt()">
+									Enkripsi
+								</button>
+							</div>
+							<div class="mt-4">
+								<label for="ciphertext">Ciphertext:</label>
+								<textarea
+									id="ciphertext"
+									class="form-control"
+									rows="3"
+									placeholder="Masukkan ciphertext..."></textarea>
+								<button class="btn btn-info btn-sm mt-2" onclick="decrypt()">
+									Dekripsi
+								</button>
+							</div>
+							<div class="mt-4">
+								<label for="plaintext1">Plaintext:</label>
+								<textarea
+									readonly
+									id="plaintext1"
+									class="form-control"
+									rows="3"
+									placeholder="Hasil Dekripsi"></textarea>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row mt-4">
+						<div class="col d-flex justify-content-evenly">
+							<button class="btn btn-success btn-sm" onclick="clearFields()">
+								Bersihkan
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/vigenere.js"></script>
+	</body>
+</html>
