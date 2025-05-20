@@ -1,7 +1,10 @@
 ## Website Vigenere Chiper
 
 ### Instalasi:
-`git clone https://github.com/Kubagus/vigenere-chiper`
+
+```
+git clone https://github.com/Kubagus/vigenere-chiper
+```
 
 `cd vigenere-chiper`
 
